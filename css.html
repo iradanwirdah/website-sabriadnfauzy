@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        .example {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Materi Lengkap tentang CSS</h1>
+
+    <h2>1. Pengertian CSS</h2>
+    <p>CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mendesain dan mengatur tampilan halaman web. CSS memungkinkan pengembang web untuk memisahkan konten dari presentasi, sehingga memudahkan dalam pengelolaan dan pemeliharaan tampilan situs web.</p>
+
+    <h2>2. Tujuan CSS</h2>
+    <p>Tujuan utama CSS adalah untuk:</p>
+    <ul>
+        <li>Mengatur tata letak dan tampilan elemen HTML.</li>
+        <li>Meningkatkan estetika dan pengalaman pengguna pada halaman web.</li>
+        <li>Mengurangi ukuran file HTML dengan memisahkan konten dari gaya.</li>
+        <li>Mendukung responsivitas desain agar tampilan web dapat menyesuaikan dengan berbagai ukuran layar.</li>
+    </ul>
+
+    <h2>3. Contoh Kode CSS</h2>
+    <p>Berikut adalah contoh kode CSS yang digunakan untuk mengubah tampilan elemen HTML.</p>
+
+    <h3>Contoh 1: Mengubah Warna dan Font</h3>
+    <pre><code>h1 {
+    color: blue;
+    font-family: Arial, sans-serif;
+}</code></pre>
+    <div class="example">
+        <h1>Judul dengan CSS</h1>
+        <p>Ini adalah contoh judul yang diubah warnanya menjadi biru dan menggunakan font Arial.</p>
+    </div>
+
+    <h3>Contoh 2: Mengatur Margin dan Padding</h3>
+    <pre><code>p {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}</code></pre>
+    <div class="example">
+        <p>Ini adalah paragraf dengan margin dan padding yang diatur menggunakan CSS.</p>
+    </div>
+
+    <h3>Contoh 3: Mengatur Layout dengan Flexbox</h3>
+    <pre><code>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+    background-color: #e0e0e0;
+}</code></pre>
+    <div class="example">
+        <div class="container">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+    </div>
+
+    <h2>4. Cara Menggunakan CSS</h2>
+    <p>CSS dapat digunakan dalam tiga cara:</p>
+    <ol>
+        <li><strong>Inline CSS:</strong> Menggunakan atribut <code>style</code> pada elemen HTML.</li>
+        <pre><code>&lt;h1 style="color: red;"&gt;Judul Merah&lt;/h1&gt;</code></pre>
+
+        <li><strong>Internal CSS:</strong> Menyisipkan kode CSS di dalam tag <code>&lt;style&gt;</code> di bagian <code>&lt;head&gt;</code> halaman HTML.</li>
+        <pre><code>&lt;style&gt;
+h1 {
+    color: green;
+}
+&lt;/style&gt;</code></pre>
+
+        <li><strong>External CSS:</strong> Menggunakan file CSS terpisah yang di-link-kan dalam halaman HTML.</li>
+        <pre><code>&lt

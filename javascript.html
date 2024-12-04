@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Lengkap JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .output {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Materi Lengkap Belajar JavaScript</h1>
+
+    <h2>1. Variabel</h2>
+    <p>Variabel digunakan untuk menyimpan data. Anda dapat menggunakan <code>var</code>, <code>let</code>, atau <code>const</code> untuk mendeklarasikan variabel.</p>
+    <pre><code>let nama = "John"; // variabel dapat diubah
+const umur = 30; // variabel konstan</code></pre>
+
+    <h2>2. Tipe Data</h2>
+    <p>JavaScript memiliki beberapa tipe data, termasuk:</p>
+    <ul>
+        <li><code>String</code>: Teks, misalnya <code>"Hello"</code></li>
+        <li><code>Number</code>: Angka, misalnya <code>42</code></li>
+        <li><code>Boolean</code>: Nilai true/false</li>
+        <li><code>Array</code>: Daftar nilai, misalnya <code>[1, 2, 3]</code></li>
+        <li><code>Object</code>: Koleksi pasangan kunci/nilai, misalnya <code>{ nama: "John", umur: 30 }</code></li>
+    </ul>
+
+    <h2>3. Operator</h2>
+    <p>Operator digunakan untuk melakukan operasi pada variabel dan nilai.</p>
+    <pre><code>let a = 10;
+let b = 5;
+let hasil = a + b; // Penjumlahan</code></pre>
+
+    <h2>4. Fungsi</h2>
+    <p>Fungsi adalah blok kode yang dapat dipanggil untuk melakukan tugas tertentu.</p>
+    <pre><code>function salam(nama) {
+    return "Halo, " + nama + "!";
+}</code></pre>
+    <button onclick="document.getElementById('outputFungsi').innerText = salam('John');">Coba Fungsi Salam</button>
+    <p class="output" id="outputFungsi"></p>
+
+    <h2>5. Objek</h2>
+    <p>Objek adalah tipe data yang menyimpan koleksi data dan entitas yang lebih kompleks.</p>
+    <pre><code>let mobil = {
+    merek: "Toyota",
+    model: "Corolla",
+    tahun: 2020,
+    deskripsi: function() {
+        return this.merek + " " + this.model + " (" + this.tahun + ")";
+    }
+};</code></pre>
+    <button onclick="document.getElementById('outputObjek').innerText = mobil.deskripsi();">Coba Objek Mobil</button>
+    <p class="output" id="outputObjek"></p>
+
+    <h2>6. Array</h2>
+    <p>Array adalah struktur data yang digunakan untuk menyimpan beberapa nilai dalam satu variabel.</p>
+    <pre><code>let angka = [1, 2, 3, 4, 5];
+let angkaPertama = angka[0]; // Mengakses elemen pertama</code></pre>
+    <button onclick="document.getElementById('outputArray').innerText = angka.join(', ');">Coba Array Angka</button>
+    <p class="output" id

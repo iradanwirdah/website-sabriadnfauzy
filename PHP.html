@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi PHP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Materi Lengkap tentang PHP</h1>
+
+    <h2>1. Pengertian PHP</h2>
+    <p>PHP (Hypertext Preprocessor) adalah bahasa pemrograman skrip yang digunakan terutama untuk pengembangan web. PHP adalah bahasa server-side yang berarti bahwa kode PHP dieksekusi di server dan hasilnya dikirim ke browser klien.</p>
+
+    <h2>2. Tujuan PHP</h2>
+    <p>Tujuan utama PHP adalah untuk membuat halaman web yang dinamis dan interaktif. Beberapa tujuan spesifik dari PHP meliputi:</p>
+    <ul>
+        <li>Membuat dan mengelola konten web yang dinamis.</li>
+        <li>Berinteraksi dengan database untuk menyimpan dan mengambil data.</li>
+        <li>Membuat aplikasi web yang kompleks dengan fitur-fitur seperti login, registrasi, dan pengelolaan data.</li>
+        <li>Memproses formulir yang dikirimkan oleh pengguna.</li>
+    </ul>
+
+    <h2>3. Contoh Kode PHP</h2>
+    <p>Berikut adalah contoh kode PHP sederhana yang menampilkan pesan selamat datang dan mengambil data dari formulir.</p>
+
+    <h3>Contoh 1: Menampilkan Pesan Selamat Datang</h3>
+    <pre><code>&lt;?php
+echo "Selamat datang di halaman PHP!";
+?&gt;</code></pre>
+
+    <h3>Contoh 2: Mengambil Data dari Formulir</h3>
+    <p>Berikut adalah contoh formulir HTML yang mengirimkan data ke skrip PHP untuk diproses:</p>
+    <pre><code>&lt;form method="post" action="proses.php"&gt;
+    Nama: &lt;input type="text" name="nama"&gt;
+    &lt;input type="submit" value="Kirim"&gt;
+&lt;/form&gt;</code></pre>
+    <p>Dan berikut adalah kode PHP di dalam <code>proses.php</code> untuk memproses data dari formulir:</p>
+    <pre><code>&lt;?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nama = htmlspecialchars($_POST["nama"]);
+    echo "Halo, " . $nama . "!";
+}
+?&gt;</code></pre>
+
+    <h2>4. Cara Menjalankan Kode PHP</h2>
+    <p>Untuk menjalankan kode PHP, Anda memerlukan server web yang mendukung PHP. Anda dapat menggunakan server lokal seperti XAMPP, WAMP, atau MAMP. Berikut adalah langkah-langkah untuk menjalankan kode PHP:</p>
+    <ol>
+        <li>Instal dan jalankan server lokal (misalnya, XAMPP).</li>
+        <li>Buat file baru dengan ekstensi <code>.php</code>, misalnya <code>index.php</code>.</li>
+        <li>Salin kode PHP ke dalam file tersebut.</li>
+        <li>Tempatkan file di dalam folder <code>htdocs</code> (untuk XAMPP).</li>
+        <li>Buka browser dan akses <code>http://localhost/index.php</code>.</li>
+    </ol>
+
+</body>
+</html>
